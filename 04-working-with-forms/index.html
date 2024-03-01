@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Forms</title>
+    <title>Edit Course Landing Page</title>
   </head>
   <body>
-    <h1>Form Controls</h1>
-    <form action="">
-      <select name="size" id="">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
+    <h1>Your Course Landing Page</h1>
+    <form action="/clp">
+      <div>
+        <label for="course-title">Course Title</label>
+        <input type="text" id="course-title" name="title" required />
+      </div>
+      <div>
+        <label for="course-description">Course Description</label>
+      </div>
+      <textarea
+        name="description"
+        id="course-description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <div>
+        <label for="skill-level">Skill Level</label>
+
+        <select name="level" id="skill-level">
+          <option value="beginner">Beginner Level</option>
+          <option value="intermediate">Intermediate Level</option>
+          <option value="expert">Expert Level</option>
+          <option value="all">All Levels</option>
+        </select>
+      </div>
+      <div>
+        <label for="confirmation">Ready to publish the course?</label>
+        <input type="checkbox" id="confirmation" name="confirmed" />
+      </div>
       <button>Submit</button>
-      <label for="phone">Call me</label>
-      <input type="radio" id="phone" />
-      <label for="email">Email me</label>
-      <input type="radio" id="email" />
     </form>
   </body>
 </html>
