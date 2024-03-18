@@ -1,0 +1,19 @@
+p {
+  color: coral;
+}
+
+a {
+  color: cyan;
+}
+
+a:visited {
+  color: red;
+}
+
+h2 {
+  color: magenta;
+}
+
+h1 {
+  color: teal;
+}
